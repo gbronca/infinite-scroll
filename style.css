@@ -31,7 +31,32 @@ h1 {
 
 .loader img {
   position: fixed;
+  /* Places the top left corner of the loader in the center of the page */
   top: 50%;
   left: 50%;
+  /* transform: translate places the center of the image in the center of the page */
   transform: translate(-50%, -50%);
+}
+
+/* Image Container */
+
+.image-container {
+  margin: 10px 30%;
+}
+
+.image-container img {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Media Query: Large Smartphones */
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .image-container {
+    margin: 10px;
+  }
 }
